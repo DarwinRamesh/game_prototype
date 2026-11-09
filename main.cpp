@@ -15,9 +15,9 @@ int main(){
 
     	Vector3 cubePosition = { 0.0f, 0.0f, 0.0f };
 
-    	SetTargetFPS(144);                   // Set our game to run at 60 frames-per-second
+    	SetTargetFPS(144);
 
-	while (!WindowShouldClose()){
+	while (!WindowShouldClose()){				// Game loop
 		UpdateCamera(&camera, CAMERA_FREE);
 
 		if (IsKeyPressed(KEY_Z)) camera.target = (Vector3){ 0.0f, 0.0f, 0.0f };
